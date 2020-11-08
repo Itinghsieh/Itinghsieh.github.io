@@ -1,30 +1,35 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>qingqing's blogs</title>
+	<title>Itinghsieh's blogs</title>
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-$(document).ready(function(){
-	$("#about").hover(function(){
-		$("#hoverContent").html("<div style=\"font-size:24px\">\
+	$(document).ready(function(){
+		$("#about").hover(function(){
+			$("#hoverContent").html("<div style=\"font-size:26px\">\
 					<li class=\"word1\"> \
-						一個無聊時喜歡做烘培的女子 \
-						<img src=\"https://i.imgur.com/E8YhXQa.jpg\"welght = \"300\" height=\"300\"> \
+						This is my following project \
+						<img src=\"https://github.com/Itinghsieh/itinghsieh.github.io/blob/main/1.png"welght = \"300\" height=\"300\"> \
 					</li>\
-					<li>最愛的甜食--布朗尼😁😁</li> \
+					<li>It looks cool</li> \
 				</div> \
 		");},
 		function(){
 			$("#hoverContent").html("");
 		}
 	);
-
+	
+	$(document).ready(function(){
+  		$("#flip").click(function(){
+    			$("#panel").slideDown("slow");
+  		});
+	});
+	
 </script>
-
+	
 <style type="text/css">
 	#title{
 		color: #ffffff;
@@ -33,22 +38,8 @@ $(document).ready(function(){
 		text-align: center;
 	}
 
-	#background_sourse{
-		text-align: right;
-		position: fixed; 
-		bottom: 0; 
-		right: 0;
-	}
-
-	#social{
-		text-align: left;
-		position: fixed; 
-		bottom: 0; 
-		left: : 0;
-	}
-
 	#sourse{
-		color: #808080; 
+		color: #FFFF00; 
 		text-decoration: none;
 	}
 
@@ -56,30 +47,16 @@ $(document).ready(function(){
 		
 	}
 
-	.multi_bg_example {
-	  background-image : url(https://mdn.mozillademos.org/files/11305/firefox.png),
-	                     url(https://mdn.mozillademos.org/files/11307/bubbles.png),
-	                     linear-gradient(to right, rgba(30, 75, 115, 1),  rgba(255, 255, 255, 0));
-
-	  background-repeat: no-repeat,
-	                     no-repeat,
-	                     no-repeat;
-
-	  background-position: bottom right,
-	                       left,
-	                       right;
-	}
-
 	#container {
 
 		color: white;
 		font-family: Consolas;
         position: relative;
-        text-align: left;
-        width: 1250px;
-        height: 500px;
+        text-align: right;
+        width: 1000px;
+        height: 700px;
         padding: 0px 0px 1300px 0px;
-        margin: 0px auto;
+        margin: 1px auto;
 		background: rgba(255, 171, 133,0.7);
 
 	}
@@ -118,12 +95,12 @@ $(document).ready(function(){
 
 	.word{
 		width: 1300px;
-		color: #fff;
+		color: #f5deb3;
 		font-size: 3em;
 	}
 
 	.word1{
-		color: #fff;
+		color: #f5deb3;
 		position: : absolute;
 		vertical-align: top;
 
@@ -136,8 +113,8 @@ $(document).ready(function(){
 
 </style>
 
-<body bgcolor="#000000">
-	<h1 id = "title">WELCOME TO MY BLOG</h1>
+<body bgcolor="#b0c4de">
+	<h1 id = "title">WELCOME TO ITINGHSIEH'S BLOG</h1>
 
 	<div id = "container">
 	
@@ -145,13 +122,16 @@ $(document).ready(function(){
 
 
 		<div class="introduce">
-			<span id="about">我的project</span> 
+			<span id="about">我的項目</span> 
 			<br>
 			<span id="record">我的日記</span> 
 		</div>			
+		
+		<div class="photo word">
+			<div id="hoverContent"></div>
+		</div>
 		
 	</div>
 
 </body>
 </html>
-
