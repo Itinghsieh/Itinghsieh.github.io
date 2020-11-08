@@ -51,8 +51,22 @@ $(document).ready(function(){
 		text-align: center;
 	}
 
+	#background_sourse{
+		text-align: right;
+		position: fixed; 
+		bottom: 0; 
+		right: 0;
+	}
+
+	#social{
+		text-align: left;
+		position: fixed; 
+		bottom: 0; 
+		left: : 0;
+	}
+
 	#sourse{
-		color: #FFFF00; 
+		color: #808080; 
 		text-decoration: none;
 	}
 
@@ -60,16 +74,30 @@ $(document).ready(function(){
 		
 	}
 
+	.multi_bg_example {
+	  background-image : url(https://mdn.mozillademos.org/files/11305/firefox.png),
+	                     url(https://mdn.mozillademos.org/files/11307/bubbles.png),
+	                     linear-gradient(to right, rgba(30, 75, 115, 1),  rgba(255, 255, 255, 0));
+
+	  background-repeat: no-repeat,
+	                     no-repeat,
+	                     no-repeat;
+
+	  background-position: bottom right,
+	                       left,
+	                       right;
+	}
+
 	#container {
 
 		color: white;
 		font-family: Consolas;
         position: relative;
-        text-align: right;
-        width: 1000px;
-        height: 700px;
+        text-align: left;
+        width: 1250px;
+        height: 500px;
         padding: 0px 0px 1300px 0px;
-        margin: 1px auto;
+        margin: 0px auto;
 		background: rgba(255, 171, 133,0.7);
 
 	}
@@ -108,12 +136,12 @@ $(document).ready(function(){
 
 	.word{
 		width: 1300px;
-		color: #f5deb3;
+		color: #fff;
 		font-size: 3em;
 	}
 
 	.word1{
-		color: #f5deb3;
+		color: #fff;
 		position: : absolute;
 		vertical-align: top;
 
@@ -126,10 +154,14 @@ $(document).ready(function(){
 
 </style>
 
-<body bgcolor="#b0c4de">
-	<h1 id = "title">WELCOME TO ITINGHSIEH'S BLOG</h1>
+<body bgcolor="#000000" background = "https://i.imgur.com/OvpZ3Mg.gif" >
+	<h1 id = "title">WELCOME TO MY BLOG</h1>
 
 	<div id = "container">
+	
+		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" style="margin:0px;opacity:0.75;" margin:20px scrollamount="10"  noshade width="100%">🤍 My Name is Iting </marquee>
+
+<div id = "container">
 	
 		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" style="margin:0px;opacity:0.75;" margin:20px scrollamount="10"  noshade width="100%">🤍 My Name is Iting </marquee>
 
@@ -145,7 +177,8 @@ $(document).ready(function(){
 		
 	</div>
 
+		
+	</div>
 </body>
 </html>
-
 
