@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-$(document).ready(function(){
+	$(document).ready(function(){
 	$("#about").hover(function(){
 		$("#hoverContent").html("<div style=\"font-size:26px\">\
 					<li class=\"word1\"> \
@@ -22,6 +22,13 @@ $(document).ready(function(){
 			$("#hoverContent").html("");
 		}
 	);
+	
+	$(document).ready(function(){
+  		$("#flip").click(function(){
+    			$("#panel").slideDown("slow");
+  		});
+	});
+	
 </script>
 	
 <style type="text/css">
@@ -121,6 +128,8 @@ $(document).ready(function(){
 			<span id="record">我的日記</span> 
 		</div>			
 		
+		<div id="flip">Click to see my project</div>
+		<div id="panel">Empty Now!</div>
 		
 		<div class="photo word">
 			<div id="hove
