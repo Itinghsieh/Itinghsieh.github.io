@@ -7,6 +7,23 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<script>
+$(document).ready(function(){
+	$("#about").hover(function(){
+		$("#hoverContent").html("<div style=\"font-size:26px\">\
+					<li class=\"word1\"> \
+						This is my following project \
+						<img src=\"https://github.com/Itinghsieh/itinghsieh.github.io/blob/main/1.png"welght = \"300\" height=\"300\"> \
+					</li>\
+					<li>It looks cool</li> \
+				</div> \
+		");},
+		function(){
+			$("#hoverContent").html("");
+		}
+	);
+</script>
+	
 <style type="text/css">
 	#title{
 		color: #ffffff;
