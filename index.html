@@ -41,6 +41,13 @@ $(document).ready(function(){
 			$("#hoverContent").html("");
 		});
 	});
+	
+	$(document).ready(function(){
+  		$("#flip").click(function(){
+    			$("#panel").slideDown("slow");
+  		});
+	});
+
 </script>
 
 <style type="text/css">
@@ -168,9 +175,8 @@ $(document).ready(function(){
 			<span id="record">我的日記</span> 
 		</div>			
 
-		<div class="photo word">
-			<div id="hoverContent"></div>
-		</div>
+		<div id="flip">Click to see my project</div>
+		<div id="panel">Empty Now!</div>
 		
 	</div>
 
