@@ -1,35 +1,43 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Itinghsieh's blogs</title>
+	<title>Iting's blogs</title>
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-	$(document).ready(function(){
-		$("#about").hover(function(){
-			$("#hoverContent").html("<div style=\"font-size:26px\">\
+$(document).ready(function(){
+	$("#about").hover(function(){
+		$("#hoverContent").html("<div style=\"font-size:26px\">\
 					<li class=\"word1\"> \
-						This is my following project \
-						<img src=\"https://github.com/Itinghsieh/itinghsieh.github.io/blob/main/1.png"welght = \"300\" height=\"300\"> \
+						This is my first project \
 					</li>\
-					<li>It looks cool</li> \
+					<li>My first Project</li> \
 				</div> \
 		");},
 		function(){
 			$("#hoverContent").html("");
 		}
 	);
-	
-	$(document).ready(function(){
-  		$("#flip").click(function(){
-    			$("#panel").slideDown("slow");
-  		});
+
+
+	$("#record").hover(function(){
+		$("#hoverContent").html("<div style=\"font-size:26px\">\
+					<li class=\"word1\"> \
+						This is my second project \
+					</li>\
+					<li>My second Proj  ect</li> \
+				</div> \
+		");},
+		function(){
+			$("#hoverContent").html("");
+		});
 	});
-	
+
 </script>
-	
+
 <style type="text/css">
 	#title{
 		color: #ffffff;
@@ -113,20 +121,25 @@
 
 </style>
 
+
+
 <body bgcolor="#b0c4de">
-	<h1 id = "title">WELCOME TO ITINGHSIEH'S BLOG</h1>
+	<h1 id = "title">歡迎來到我的部落格!!!!</h1>
 
 	<div id = "container">
 	
-		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" style="margin:0px;opacity:0.75;" margin:20px scrollamount="10"  noshade width="100%">🤍 My Name is Iting </marquee>
-
+		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" style="margin:0px;opacity:0.75;" margin:20px scrollamount="10"  noshade width="100%">My Name is Iting </marquee>
 
 		<div class="introduce">
-			<span id="about">我的項目</span> 
+			<span id="about">我的項目一</span> 
 			<br>
-			<span id="record">我的日記</span> 
+            <span id="record">我的項目二</span> 
+            <br>
+            <span id="record2">我的項目三</span> 
+			<br>
+			<span id="record3">我的項目四</span> 
 		</div>			
-		
+
 		<div class="photo word">
 			<div id="hoverContent"></div>
 		</div>
@@ -135,3 +148,4 @@
 
 </body>
 </html>
+
